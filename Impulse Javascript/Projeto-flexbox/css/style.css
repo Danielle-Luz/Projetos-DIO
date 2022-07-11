@@ -220,6 +220,10 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    opacity: 80%;
+}
+
 .mg-top {
     margin-top: 30px;
 }
