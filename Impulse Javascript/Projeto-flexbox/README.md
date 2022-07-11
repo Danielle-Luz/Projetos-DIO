@@ -13,7 +13,7 @@
 ## :pushpin: Tópicos
 - [Descrição do projeto](#Descrição-do-projeto)
 
-- [Destaques](#Destaques)
+- [Features](#Features)
 
 - [Preview da página](#Preview-da-página)
 
@@ -33,15 +33,13 @@
     - [Repositório](#repositorio)
     - [Pessoa instrutora da DIO](#pessoa-instrutora)
 
-- [Desenvolvedora](#Desenvolvedora)
-
 
 ## :pencil2: <span id="Descrição-do-projeto">Descrição do projeto</span>
 Landing page de uma empresa de turismo fictícia, a Flex Turismos. O objetivo desse projeto é exercitar o uso da funcionalidade "flexbox", um meio de organizar o layout de uma página HTML unidimensionalmente.
 
 O desafio foi proposto dentro do curso ["Posicionando elementos com flexbox em CSS"](https://web.dio.me/course/posicionando-elementos-com-flexbox-em-css/learning/46f1e8c7-ef6e-458e-ad4e-369fc65faba7?back=/track/impulso-javascript-evolution&tab=undefined&moduleId=undefined) da DIO.
 
-## :sparkles: <span id="Destaques">Destaques</span>
+## :sparkles: <span id="Features">Features</span>
 * Layout responsivo
 * *Hamburguer menu* em telas pequenas
 
@@ -97,7 +95,8 @@ O desafio foi proposto dentro do curso ["Posicionando elementos com flexbox em C
 ## :money_with_wings: <span id="Créditos">Créditos</span>
 
 ### <span id="icones">Ícones no `README.md`</span>
-* <a target="_blank" href="https://icons8.com/icon/20909/html-5">Html 5 icon by Icons8</a>
+* <a target="_blank" href="https://icons8.com/">Icons8</a>
+
 
 ### <span id="original">Projeto original</span>
 * <h4 id="design">Design:</h4>
@@ -118,17 +117,4 @@ O desafio foi proposto dentro do curso ["Posicionando elementos com flexbox em C
 </p>
 <p align="center">
   <a href="https://gitlab.com/karensantos">Gitlab</a>
-</p>
-
-## :woman: <span id="Desenvolvedora">Desenvolvedora</span>
-<p align="center">
-  <a href="https://github.com/Danielle-Luz">
-    <img width="120px" src="https://avatars.githubusercontent.com/u/99164019?v=4" alt="foto de uma mulher parda com o cabelo castanho, sorrindo levemente na frente de um fundo verde com bits">
-  </a>
-</p>
-<p align="center">
-Danielle da Luz Nascimento
-</p>
-<p align="center">
-<a href="https://www.linkedin.com/in/danielle-da-luz-nascimento/">@Linkedin</a>
 </p>
