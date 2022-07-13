@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Special Elite';
+}
+body {
+    perspective: 1000px;
+    background-color: rgb(212, 212, 212);
+}
+
+.livro {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+@media (max-width: 450px) {
+    section {
+        justify-content: flex-end !important;
+    }
+}
+
+article {
+    position: absolute;
+    transform: rotateX(30deg);
+    transform-origin: center left;
+    transition: all 1s;
+    border-radius: 0 14px 14px 0;
+}
+
+h1 {
+    color:antiquewhite;
+}
+
+#capa, #fundo, .contra {
+    width: 300px;
+    height: 500px;
+    background-color: rgb(35, 35, 70);
+    border-radius: 0 14px 14px 0;
+}
+
+#capa, #fundo {
+    box-shadow: 2px 2px 5px rgb(63, 63, 63);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.folha {
+    width: 280px;
+    height: 480px;
+    background-color:antiquewhite;
+    margin-top: 10px;
+    z-index: 1;
+}
+
+#capa {
+    z-index: 2;
+}
+
+#fundo {
+    z-index: 0;
+}
+
+#capa:hover {
+    transform: rotateX(30deg) rotateY(-180deg);
+}
+
+
+.botoes {
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+img {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#bright {
+    transform: rotateY(-180deg);
+}
