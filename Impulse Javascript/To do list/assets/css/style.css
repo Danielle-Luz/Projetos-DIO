@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Special Elite';
+
+:root {
+    --sombra: rgb(63, 63, 63);
+    --azul: rgb(35, 35, 70);
+    --sombraEscura: rgb(29, 29, 29);
 }
+
 body {
     perspective: 1000px;
     background-color: rgb(212, 212, 212);
@@ -22,11 +23,14 @@ body {
 }
 
 article {
+    width: 320px;
+    height: 500px;
     position: absolute;
     transform: rotateX(30deg);
     transform-origin: center left;
     transition: all 1s;
     border-radius: 0 14px 14px 0;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -34,25 +38,21 @@ h1 {
 }
 
 #capa, #fundo, .contra {
-    width: 300px;
-    height: 500px;
-    background-color: rgb(35, 35, 70);
-    border-radius: 0 14px 14px 0;
+    background-color: var(--azul);
 }
 
 #capa, #fundo {
-    box-shadow: 2px 2px 5px rgb(63, 63, 63);
+    box-shadow: 2px 2px 5px var(--sombra), inset 9px 0px 17px -9px var(--sombraEscura);
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .folha {
-    width: 280px;
-    height: 480px;
     background-color:antiquewhite;
-    margin-top: 10px;
     z-index: 1;
+    box-shadow: inset 8px 0px 17px -9px var(--sombra);
 }
 
 #capa {
