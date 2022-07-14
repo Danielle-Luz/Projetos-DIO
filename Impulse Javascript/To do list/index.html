@@ -2,24 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets\css\style.css">
+    <meta 
+    http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta 
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="css\style.css">
+    <script src="js\script.js" defer></script>
 </head>
-<body>
+<body class="center fd-column">
     <section class="livro">
-        <article id="fundo"></article>
-        <article class="folha">
+
+        <article class="pagina capa capa-frente">
+            <article class="frente">
+            </article>
+
+            <article class="tras">
+
+            </article>
         </article>
-        <article id="capa">
-            <h1>Task list</h1>
+
+        <article class="pagina folha-branca">
+            <article class="frente">
+                <div class="conteudo grid-container">
+                    <div class="bloco">
+                        <h2>Things to do</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text">
+                                </td>
+                                <td>
+                                    <button class="b-done">x</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bloco">
+                        <h2>Goals</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text">
+                                </td>
+                                <td>
+                                    <button class="b-done">x</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bloco">
+                        <h2>Must do today</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text">
+                                </td>
+                                <td>
+                                    <button class="b-done">x</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="bloco">
+                        <h2>10 minute just do it projects</h2>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text">
+                                </td>
+                                <td>
+                                    <button class="b-done">x</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </article>
+
+            <article class="tras">
+                <div class="conteudo center">
+
+                </div>
+            </article>
+        </article>
+
+        <article class="pagina capa capa-fundo">
+            <article class="frente">
+                <div class="conteudo center">
+                    <h1>To do<br>list</h1>
+                </div>
+            </article>
+            <article class="tras">
+            </article>
         </article>
     </section>
+
     <section class="botoes">
-        <img id="bleft" src="https://img.icons8.com/ios-glyphs/60/000000/circled-chevron-left.png"/>
-        <img id="bright" src="https://img.icons8.com/ios-glyphs/60/000000/circled-chevron-left.png"/>
+        <button id="b-esquerda">
+            <img src="https://img.icons8.com/cotton/64/000000/circled-chevron-left--v1.png"/>
+        </button>
+        <button id="b-direita">
+            <img src="https://img.icons8.com/cotton/64/000000/circled-chevron-right--v1.png"/>
+        </button>
     </section>
-    <script src="assets\js\script.js"></script>
+
 </body>
 </html>
