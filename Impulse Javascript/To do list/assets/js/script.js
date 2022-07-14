@@ -6,25 +6,34 @@ let livro = {
     atual: 0
 };
 
-livro.atual = livro.paginas.length-1;
+let size = livro.paginas.length-1;
+livro.atual = size;
+
+for(let i = size; i >= 0; i-- ){
+    livro.paginas[i].style.Zindex = size;
+    size--;
+}
+
+size = livro.paginas.length-1;
 
 bright.onclick = () => {
+    let n = 0;
+    for (let i = size; i >= livro.atual; i--) {
+        livro.paginas[i].style.zIndex = n;
+        n++;
+    }
     livro.paginas[livro.atual].style.transform = "rotateX(30deg) rotateY(-180deg)";
-    let zindex = window.getComputedStyle(livro.paginas[livro.atual]).getPropertyValue("z-index");
     if (livro.atual > 0) {
         livro.atual--;
-        setTimeout(function(){
-            livro.paginas[livro.atual].style.zIndex = parseInt(zindex)+2;
-        }, 1000);
     }
 };
 
 bleft.onclick = () => {
-    if (livro.atual <= (livro.paginas.length-1)) {
-        let zindex= window.getComputedStyle(livro.paginas[livro.atual]).getPropertyValue("z-index");
-        livro.paginas[livro.atual+1].style.transform = "rotateX(30deg) rotateY(0deg)";
-        livro.paginas[livro.atual+1].style.zIndex=parseInt(zindex)+2;
-        livro.atual++;
+    if (livro.atual <= size) {
+        livro.paginas[livro.atual].style.zIndex = size-parseInt(window.getComputedStyle(livro.paginas[livro.atual]).getPropertyValue("z-index"));
+        livro.paginas[livro.atual].style.transform = "rotateX(30deg) rotateY(0deg)";
+        if(livro.atual < size) {
+            livro.atual++;
+        }
     }
 };
-
