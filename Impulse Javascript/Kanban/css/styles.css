@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --bg-col: rgb(1, 4, 9);
+    --bg-task: rgb(22, 27, 34);
+    --cinza: rgb(45, 49, 57);
+    --bg-body: rgb(13, 17, 23);
+    --texto: rgb(201, 209, 210);
+    --botao: rgb(139, 148, 158);
+}
+
+* {
+    font-family: 'Montserrat';
+    color: var(--texto);
+    font-size: 13px;
+}
+
+body {
+    background-color: var(--bg-body);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: var(--botao);
+    font-size: 20px;
+}
+
+nav div h2 {
+    margin-left: 10px;
+}
+
+nav button:nth-child(2) {
+    box-sizing: border-box;
+    padding-bottom: 10px;
+}
+
+.pd {
+    padding: 5px 10px;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.a-center {
+    align-items: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-none {
+    display: none;
+}
+
+.bg-cinza {
+    background-color: var(--cinza);
+}
+
+.counter {
+    border-radius: 100%;
+    width: 20px;
+    height: 18px;
+    text-align: center;
+    margin: 0;
+}
+
+.coluna {
+    background-color: var(--bg-col);
+    border: 1px solid var(--cinza);
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+}
+
+.task {
+    padding-inline: 10px;
+    align-items: flex-start;
+    position: relative;
+}
+
+#menu-task-relative {
+    position: relative
+}
+
+.menu-task {
+    box-shadow: 0 0 5px 0px rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
+}
+
+.task, .menu-task, .coluna {
+    border-radius: 5px;
+}
+
+.task, .menu-task {
+    border: 1px solid rgb(85, 85, 85);
+}
+
+.menu-task button{
+    font-size: 13px;
+    display: block;
+    padding-block: 8px;
+    margin: 0 !important;
+}
+
+hr {
+    border: 1px solid rgb(85, 85, 85);
+    font-size: 1px;
+    background-color: transparent;
+    outline: none;
+}
