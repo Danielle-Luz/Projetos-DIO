@@ -38,6 +38,10 @@ body > article:nth-of-type(2) {
   .coluna:nth-child(2) {
     margin-block: 10px;
   }
+
+  .section-tasks {
+    height: 40% !important;
+  }
 }
 
 @media (max-width: 310px) {
@@ -59,6 +63,10 @@ button {
   border: none;
   color: var(--botao);
   font-size: 20px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 nav div h2 {
@@ -119,13 +127,14 @@ nav div:nth-child(1) button:nth-child(2) {
 
 .section-tasks {
   overflow: auto;
-  height: 300px;
+  height: 85%;
 }
 
 .task {
   padding-inline: 10px;
   align-items: flex-start;
   position: relative;
+  margin-bottom: 5px;
 }
 
 .menu-task {
@@ -139,6 +148,11 @@ nav div:nth-child(1) button:nth-child(2) {
 .menu-task,
 .coluna {
   border-radius: 5px;
+}
+
+.div-menu-task {
+  position: relative;
+  z-index: 10;
 }
 
 .botoes-texto {
@@ -169,9 +183,12 @@ textarea:focus {
   border-color: rgb(88, 166, 255);
 }
 
+textarea, nav .botoes-texto {
+  width: 100%;
+}
+
 textarea,
 .botoes-texto {
-  width: 100%;
   border-radius: 5px;
   resize: none;
 }
