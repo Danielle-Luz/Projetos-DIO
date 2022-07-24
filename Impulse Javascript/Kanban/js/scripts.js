@@ -120,6 +120,7 @@ b_cancel.forEach ( botao => {
     botao.onclick = () => {
         let div_input = achar_elemento (botao, botao.querySelector(".div-add"), ".div-add");
         div_input.classList.add ("d-none");
+        div_input.querySelector ("textarea").value = "";
     }
 });
 
@@ -127,6 +128,7 @@ b_toggle_header.forEach ((botao, index) => {
     botao.onclick = () => {
         let div_input = achar_elemento (botao, botao.querySelector(".div-add"), ".div-add");
         div_input.classList.toggle("d-none");
+        div_input.querySelector ("textarea").value = "";
     };
 
     b_add_task[index].onclick = () => {
