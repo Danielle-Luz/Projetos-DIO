@@ -2,6 +2,7 @@ let b_toggle_header = document.querySelectorAll (".b-expand-input");
 let b_add_task = document.querySelectorAll (".b-add-task");
 let tasklists = document.querySelectorAll (".section-tasks");
 let b_cancel = document.querySelectorAll (".b-cancel");
+let el_pai_anterior;
 let lista_to_do;
 let lista_doing;
 let lista_done;
@@ -71,10 +72,17 @@ listas.forEach ( (lista, index) => {
                 task_container.parentNode.removeChild (task_container);
                 lista.splice (index_item, 1);
                 localStorage.setItem (index == 0 ? "lista_to_do" : index == 1 ? "lista_doing" : "lista_done", JSON.stringify (lista));
+                contador.textContent = parseInt (contador.textContent) - 1;
             };
 
             task_container.ondragstart = event => {
                 dragged = event.target;
+                el_pai_anterior = event.target.parentNode;
+            };
+
+            task_container.ondragend = () => {
+                let counter = achar_elemento (el_pai_anterior, el_pai_anterior.querySelector (".counter"), ".counter");
+                counter.textContent = parseInt (counter.textContent) > 0 ? parseInt (counter.textContent) - 1 : 0;
             };
         });
     }
@@ -85,6 +93,8 @@ tasklists.forEach ( tasklist => {
         event.preventDefault();
     };
     tasklist.ondrop = event=> {
+        let contador = achar_elemento (event.target, event.target.querySelector (".counter"), ".counter");
+        contador.textContent = parseInt (contador.textContent) + 1;
         tasklist.appendChild (dragged);
     };
 });
