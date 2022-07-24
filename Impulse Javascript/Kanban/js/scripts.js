@@ -6,6 +6,7 @@ let lista_to_do;
 let lista_doing;
 let lista_done;
 let listas;
+let dragged;
 
 if (localStorage.getItem ("lista_to_do") == null) {
     localStorage.setItem ("lista_to_do", JSON.stringify (new Array ()));
@@ -48,6 +49,7 @@ listas.forEach ( (lista, index) => {
             task_content.textContent = item;
             b_menu.textContent = "...";
             b_delete.textContent = "Excluir";
+            task_container.setAttribute ("draggable", "true");
             menu.appendChild (b_delete);
             task_menu_container.appendChild (b_menu);
             task_menu_container.appendChild (menu);
@@ -66,12 +68,25 @@ listas.forEach ( (lista, index) => {
             };
 
             b_delete.onclick = () => {
-                tasklists[index].removeChild (task_container);
+                task_container.parentNode.removeChild (task_container);
                 lista.splice (index_item, 1);
                 localStorage.setItem (index == 0 ? "lista_to_do" : index == 1 ? "lista_doing" : "lista_done", JSON.stringify (lista));
             };
+
+            task_container.ondragstart = event => {
+                dragged = event.target;
+            };
         });
     }
+});
+
+tasklists.forEach ( tasklist => {
+    tasklist.ondragover = event => {
+        event.preventDefault();
+    };
+    tasklist.ondrop = event=> {
+        tasklist.appendChild (dragged);
+    };
 });
 
 b_cancel.forEach ( botao => {
