@@ -69,22 +69,9 @@ listas.forEach ( (lista, index) => {
             };
 
             b_delete.onclick = () => {
-                let i;
-                let x;
-                let b_deletes = document.querySelectorAll (".del");
-                for (i = 0; i < 2; i++) {
-                    if (tasklists[i] == task_container.parentNode) {
-                        break;
-                    }
-                }
-                for (x = 0; x < b_deletes.length; x++) {
-                    if (b_deletes[x] == b_delete) {
-                        break;
-                    }
-                }
                 task_container.parentNode.removeChild (task_container);
-                listas[i].splice (x, 1);
-                localStorage.setItem (i == 0 ? "lista_to_do" : i == 1 ? "lista_doing" : "lista_done", JSON.stringify (listas[i]));
+                lista.splice (index_item, 1);
+                localStorage.setItem (index == 0 ? "lista_to_do" : index == 1 ? "lista_doing" : "lista_done", JSON.stringify (lista));
                 contador.textContent = parseInt (contador.textContent) - 1;
             };
 
@@ -118,7 +105,7 @@ tasklists.forEach ( (tasklist, index) => {
     tasklist.ondragover = event => {
         event.preventDefault();
     };
-    tasklist.ondrop = event => {
+    tasklist.ondrop = event=> {
         let contador = achar_elemento (event.target, event.target.querySelector (".counter"), ".counter");
         contador.textContent = parseInt (contador.textContent) + 1;
         tasklist.appendChild (dragged);
