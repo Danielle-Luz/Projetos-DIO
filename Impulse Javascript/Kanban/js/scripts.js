@@ -2,11 +2,11 @@ let b_toggle_header = document.querySelectorAll (".b-expand-input");
 let b_add_task = document.querySelectorAll (".b-add-task");
 let tasklists = document.querySelectorAll (".section-tasks");
 let b_cancel = document.querySelectorAll (".b-cancel");
-let el_pai_anterior;
 let lista_to_do;
 let lista_doing;
 let lista_done;
 let listas;
+let el_pai_anterior;
 let dragged;
 
 if (localStorage.getItem ("lista_to_do") == null) {
@@ -69,9 +69,22 @@ listas.forEach ( (lista, index) => {
             };
 
             b_delete.onclick = () => {
+                let i;
+                let x;
+                let b_deletes = document.querySelectorAll (".del");
+                for (i = 0; i < 2; i++) {
+                    if (tasklists[i] == task_container.parentNode) {
+                        break;
+                    }
+                }
+                for (x = 0; x < b_deletes.length; x++) {
+                    if (b_deletes[x] == b_delete) {
+                        break;
+                    }
+                }
                 task_container.parentNode.removeChild (task_container);
-                lista.splice (index_item, 1);
-                localStorage.setItem (index == 0 ? "lista_to_do" : index == 1 ? "lista_doing" : "lista_done", JSON.stringify (lista));
+                listas[i].splice (x, 1);
+                localStorage.setItem (i == 0 ? "lista_to_do" : i == 1 ? "lista_doing" : "lista_done", JSON.stringify (listas[i]));
                 contador.textContent = parseInt (contador.textContent) - 1;
             };
 
@@ -81,21 +94,38 @@ listas.forEach ( (lista, index) => {
             };
 
             task_container.ondragend = () => {
+                let i;
                 let counter = achar_elemento (el_pai_anterior, el_pai_anterior.querySelector (".counter"), ".counter");
                 counter.textContent = parseInt (counter.textContent) > 0 ? parseInt (counter.textContent) - 1 : 0;
+                for (i = 0; i < 2; i++) {
+                    if (tasklists[i] == el_pai_anterior) {
+                        break;
+                    }
+                }
+                for (let x = 0; x < listas[i].length; x++) {
+                    if (listas[i][x] == task_container.querySelector ("p").textContent) {
+                        listas[i].splice (x, 1);
+                        break;
+                    }
+                }
+                localStorage.setItem (i == 0 ? "lista_to_do" : i == 1 ? "lista_doing" : "lista_done", JSON.stringify (listas[i]));
             };
         });
     }
 });
 
-tasklists.forEach ( tasklist => {
+tasklists.forEach ( (tasklist, index) => {
     tasklist.ondragover = event => {
         event.preventDefault();
     };
-    tasklist.ondrop = event=> {
+    tasklist.ondrop = event => {
         let contador = achar_elemento (event.target, event.target.querySelector (".counter"), ".counter");
         contador.textContent = parseInt (contador.textContent) + 1;
         tasklist.appendChild (dragged);
+        if (dragged != undefined) {
+            listas[index].push (dragged.querySelector ("p").textContent);
+            localStorage.setItem (index == 0 ? "lista_to_do" : index == 1 ? "lista_doing" : "lista_done", JSON.stringify (listas[index]));
+        }
     };
 });
 
