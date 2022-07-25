@@ -39,15 +39,39 @@ As pastas mais externas levam o nome dos bootcamps ou desafios propostos durante
             <td>Tecnologias</td>
         </thead>
         <tbody>
-            <td><a href="https://github.com/Danielle-Luz/Projetos-DIO/tree/main/Impulse%20Javascript/Projeto-flexbox">Flexturismo- Exercício de flexbox</a></td>
-            <td>Julho/2022</td>
-            <td>Finalizado</td>
-            <td>
-                <img src="https://img.icons8.com/color/30/000000/html-5--v1.png"/>
-                <img src="https://img.icons8.com/color/30/000000/css3.png"/>
-                <img src="https://img.icons8.com/color/30/000000/javascript--v1.png"/>
-                <img src="https://img.icons8.com/color/30/000000/visual-studio-code-2019.png"/>
-            </td>
+            <tr>
+                <td><a href="https://github.com/Danielle-Luz/Projetos-DIO/tree/main/Impulse%20Javascript/Projeto-flexbox">Flexturismo- Exercício de flexbox</a></td>
+                <td>Julho/2022</td>
+                <td>Finalizado</td>
+                <td>
+                    <img src="https://img.icons8.com/color/30/000000/html-5--v1.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/css3.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/javascript--v1.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/visual-studio-code-2019.png"/>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/Danielle-Luz/Projetos-DIO/tree/main/Impulse%20Javascript/Kanban">Kanban do github</a></td>
+                <td>Julho/2022</td>
+                <td>Finalizado</td>
+                <td>
+                    <img src="https://img.icons8.com/color/30/000000/html-5--v1.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/css3.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/javascript--v1.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/visual-studio-code-2019.png"/>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/Danielle-Luz/Projetos-DIO/tree/main/Impulse%20Javascript/Contador-de-texto">Contador de texto</a></td>
+                <td>Julho/2022</td>
+                <td>Finalizado</td>
+                <td>
+                    <img src="https://img.icons8.com/color/30/000000/html-5--v1.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/css3.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/javascript--v1.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/visual-studio-code-2019.png"/>
+                </td>
+            </tr>           
         </tbody>
     </table>
 
