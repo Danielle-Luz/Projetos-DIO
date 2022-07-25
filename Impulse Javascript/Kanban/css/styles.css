@@ -40,7 +40,7 @@ body > article:nth-of-type(2) {
   }
 
   .section-tasks {
-    height: 40% !important;
+    height: 70% !important;
   }
 }
 
@@ -80,6 +80,7 @@ nav div:nth-child(1) button:nth-child(2) {
 
 .pd {
   padding: 5px 10px;
+  height: 100% !important;
 }
 
 .between {
@@ -110,6 +111,7 @@ nav div:nth-child(1) button:nth-child(2) {
   background-color: var(--bg-col);
   border: 1px solid var(--cinza);
   width: 300px;
+  height: 80%;
   overflow: hidden;
 }
 
