@@ -1,0 +1,255 @@
+:root {
+    --azul-claro: rgb(0, 149, 246);
+    --azul-escuro: rgb(56, 81, 133);
+    --cinza: rgb(219, 219, 219);
+    --cinza-escuro: rgb(142, 142, 142);
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+}
+
+* {
+    font-family:  -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+    font-size: 14px;
+}
+
+main {
+    padding-left: 30px;
+}
+
+body {
+    height: 100vh;
+    overflow: auto;
+    margin: 0;
+    margin-block: 40px;
+    background-color: rgb(250, 250, 250);
+}
+
+body > div {
+    align-items: flex-start;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+#div-login, #sign-up {
+    border: 1px solid var(--cinza);
+}
+
+#div-login {
+    padding-inline: 40px !important;
+    padding-bottom: 8px;
+    width: 280px;
+    background-color: white;
+}
+#logo {
+    padding-block: 50px 30px;
+    width: 190px;
+}
+
+span, #logo {
+    display: block;
+    margin: 0 auto;
+}
+
+
+.cel-transicao {
+    width: 410px;
+    transition: 2s;
+}
+
+.cel-transicao {
+    position: absolute;
+}
+
+.cel-transicao:nth-child(3) {
+    position: relative;
+}
+
+input, #divider::before, #divider::after {
+    box-sizing: border-box;
+}
+
+input {
+    padding-inline: 5px;
+    padding-block: 12px;
+    border: 1px solid var(--cinza);
+    font-size: 13px;
+    box-sizing: border-box;
+    color: rgb(38, 38, 38);
+    background-color: rgb(250, 250, 250);
+}
+
+input, button {
+    border-radius: 3px;
+}
+
+button {
+    background-color: var(--azul-claro);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 14.5px;
+    padding-block: 8px;
+    padding-inline: 6px;
+    width: 100%;
+    height: fit-content;
+    opacity: 30%;
+}
+
+input, button {
+    width: 100%;
+}
+
+input, button, #under-form a{
+    display: block;
+}
+
+input:nth-of-type(2) {
+    margin-block: 7px 15px;
+}
+
+input:focus {
+    border: 1px solid var(--cinza-escuro) !important;
+    outline: none;
+}
+
+::placeholder {
+    color: var(--cinza-escuro);
+}
+
+#facebook {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 20px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+#facebook:before {
+    content: url(https://img.icons8.com/fluency/25/000000/facebook.png);
+    margin-right: 5px;
+}
+
+#divider {
+    margin-block: 15px 30px;
+    text-transform: uppercase;
+    color: var(--cinza-escuro);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#divider::before, #divider::after {
+    content: "";
+    display: inline-block;
+    background-color: var(--cinza);
+    height: 1px;
+}
+
+#divider::before  {
+    margin-inline: 5px 20px;
+}
+
+#divider::after {
+    margin-inline: 20px 5px;
+}
+
+
+#divider, #divider::before, #divider::after {
+    flex-grow: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#under-form a {
+    color: var(--azul-escuro);
+}
+
+#sign-up {
+    margin-block: 12px;
+    padding: 22px 20px;
+    font-size: 14.5px;
+}
+
+#sign-up a {
+    color: var(--azul-claro);
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#under-form a, #sign-up, #divider {
+    text-align: center;
+}
+
+#aside-download img {
+    width: 150px;
+}
+
+#aside-download img:nth-child(1) {
+    margin-right: 8px;
+}
+
+#aside-download span {
+    width: fit-content;
+    font-size: 14.5px;
+    margin-block: 20px;
+}
+
+@media (max-width: 875px){
+    .cel-transicao {
+        display: none;
+    }
+}
+@media (max-width: 525px) {
+    main {
+        padding: 0 !important;
+        width: 100%;
+    }
+
+    form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #aside-download ul {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 395px) {
+    *:not(button) {
+        background-color: white !important;
+    }
+
+    #div-login {
+        padding-inline: 0 !important;
+        width: 100%;
+    }
+
+    #div-login, #sign-up {
+        border: none;
+    }
+}
+
+@media (max-width: 215px) {
+    #logo {
+        width: 100%;
+        padding-inline: 10px;
+        box-sizing: border-box;
+    }
+}
