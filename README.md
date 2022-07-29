@@ -36,6 +36,7 @@ As pastas mais externas levam o nome dos bootcamps ou desafios propostos durante
             <td>Nome do projeto</td>
             <td>Data de criação</td>
             <td>Status</td>
+            <td>Github pages</td>
             <td>Tecnologias</td>
         </thead>
         <tbody>
@@ -43,6 +44,7 @@ As pastas mais externas levam o nome dos bootcamps ou desafios propostos durante
                 <td><a href="https://github.com/Danielle-Luz/Projetos-DIO/tree/main/Impulse%20Javascript/Projeto-flexbox">Flexturismo- Exercício de flexbox</a></td>
                 <td>Julho/2022</td>
                 <td>Finalizado</td>
+                <td><a href="">Confira aqui esse projeto</a></td>
                 <td>
                     <img src="https://img.icons8.com/color/30/000000/html-5--v1.png"/>
                     <img src="https://img.icons8.com/color/30/000000/css3.png"/>
@@ -54,6 +56,7 @@ As pastas mais externas levam o nome dos bootcamps ou desafios propostos durante
                 <td><a href="https://github.com/Danielle-Luz/Projetos-DIO/tree/main/Impulse%20Javascript/Kanban">Kanban do github</a></td>
                 <td>Julho/2022</td>
                 <td>Finalizado</td>
+                <td><a href="https://danielle-luz.github.io/Projetos-DIO/Impulse%20Javascript/Kanban/index.html">Confira aqui esse projeto</a></td>
                 <td>
                     <img src="https://img.icons8.com/color/30/000000/html-5--v1.png"/>
                     <img src="https://img.icons8.com/color/30/000000/css3.png"/>
@@ -65,6 +68,7 @@ As pastas mais externas levam o nome dos bootcamps ou desafios propostos durante
                 <td><a href="https://github.com/Danielle-Luz/Projetos-DIO/tree/main/Impulse%20Javascript/Contador-de-texto">Contador de texto</a></td>
                 <td>Julho/2022</td>
                 <td>Finalizado</td>
+                <td><a href="https://danielle-luz.github.io/Projetos-DIO/Impulse%20Javascript/Contador-de-texto/index.html">Confira aqui esse projeto</a></td>
                 <td>
                     <img src="https://img.icons8.com/color/30/000000/html-5--v1.png"/>
                     <img src="https://img.icons8.com/color/30/000000/css3.png"/>
@@ -76,6 +80,19 @@ As pastas mais externas levam o nome dos bootcamps ou desafios propostos durante
                 <td><a href="https://github.com/Danielle-Luz/Projetos-DIO/tree/main/Impulse%20Javascript/instagram-page">Página de login do instagram</a></td>
                 <td>Julho/2022</td>
                 <td>Finalizado</td>
+                <td><a href="https://danielle-luz.github.io/Projetos-DIO/Impulse%20Javascript/instagram-page/">Confira aqui esse projeto</a></td>
+                <td>
+                    <img src="https://img.icons8.com/color/30/000000/html-5--v1.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/css3.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/javascript--v1.png"/>
+                    <img src="https://img.icons8.com/color/30/000000/visual-studio-code-2019.png"/>
+                </td>
+            </tr>
+            <tr>
+                <td><a href="https://github.com/Danielle-Luz/Projetos-DIO/tree/main/Impulse%20Javascript/palindromo">Identificador de palíndromo</a></td>
+                <td>Julho/2022</td>
+                <td>Finalizado</td>
+                <td><a href="https://danielle-luz.github.io/Projetos-DIO/Impulse%20Javascript/palindromo/">Confira aqui esse projeto</a></td>
                 <td>
                     <img src="https://img.icons8.com/color/30/000000/html-5--v1.png"/>
                     <img src="https://img.icons8.com/color/30/000000/css3.png"/>
