@@ -6,6 +6,9 @@
 
 body, img {
     display: flex;
+}
+
+img {
     margin: 0 auto;
 }
 
@@ -21,7 +24,7 @@ body {
 
 .container {
     background-color: white;
-    padding: 70px 50px;
+    padding: 50px 50px;
 }
 
 h1 {
@@ -32,10 +35,6 @@ main {
     width: 300px;
 }
 
-form {
-    width: 100%;
-}
-
 textarea {
     resize: none;
     width: 100%;
@@ -44,9 +43,12 @@ textarea {
     box-sizing: border-box;
 }
 
+textarea, button, form {
+    width: 100%;
+}
+
 button {
     display: block;
-    width: 100%;
     padding-block: 10px;
     margin: 20px auto 0;
     background-color: black;
@@ -56,6 +58,23 @@ button {
 
 textarea, button, .container {
     border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(160, 160, 160);
+}
+
+a:visited {
+    color: rgb(160, 160, 160);
+}
+
+small {
+    text-align: center;
+    display: block;
+    color: white;
+    margin-top: 15px;
+    font-size: 12px;
 }
 
 .nao-palindromo {
