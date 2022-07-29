@@ -54,6 +54,11 @@ button {
     background-color: black;
     color: white;
     border: none;
+    cursor: pointer;
+}
+
+button:hover, a:hover {
+    opacity: 70%;
 }
 
 textarea, button, .container {
