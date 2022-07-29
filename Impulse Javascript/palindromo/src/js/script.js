@@ -3,6 +3,7 @@ const submit = document.querySelector ("button");
 const resultado = document.getElementById ("resultado");
 
 submit.onclick = () => {
+    const valor_textarea = textarea.value.toLowerCase();
     const valor_nospace = valor_textarea.replace(/\s/g, "");
     const valor_contrario = valor_nospace.split("").reverse().join().replace(/,/g, "");
     if (valor_nospace == valor_contrario) {
